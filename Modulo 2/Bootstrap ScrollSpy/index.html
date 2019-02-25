@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Bootstrap</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="col-md-4">
+		<h2>Scrollspy</h2>
+			<div style="position:relative;">
+			  <!-- Navigation -->
+				 <nav class="navbar navbar-default navbar-static" role="navigation" id="navbar-spy">
+					 <ul class="nav navbar-nav">
+					<li class="active"><a href="#scroll-first">first</a></li>
+					<li> <a href="#scroll-second">second</a></li>
+					<li><a href="#scroll-third">third</a></li>
+				</ul>
+				</nav>
+				<!-- content -->
+				<div data-target="#navbar-spy" data-spy="scroll" style="height:150px; overflow-y:scroll; position:relative;">
+					<div  id="scroll-first">
+						<h2>Home</h2>
+						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+					</div>
+					<div id="scroll-second">
+						<h2>Profile</h2>
+						Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero..
+					</div>
+					<div id="scroll-third">
+						<h2>Menssages</h2>
+						Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum.
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+
