@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Bootstrap</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="panel-group" id="collapse">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-one">
+									Accordion heading 1
+								</a>
+							</h4>
+						</div>
+						<div id="collapse-one" class="panel-collapse collapse in">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida purus. 
+							</div>							
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-two">
+									Accordion heading 2
+								</a>
+							</h4>
+						</div>
+						<div id="collapse-two" class="panel-collapse collapse">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida purus. 
+							</div>							
+						</div>
+					</div>
+
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#collapse" href="#collapse-three">
+									Accordion heading 3
+								</a>
+							</h4>
+						</div>
+						<div id="collapse-three" class="panel-collapse collapse">
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida purus. 
+							</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<p>
+				<a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+				<button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+				</p>
+
+		<div class="row">
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="multiCollapseExample1">
+		      <div class="card card-body">
+		        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col">
+		    <div class="collapse multi-collapse" id="multiCollapseExample2">
+		      <div class="card card-body">
+		        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at gravida purus. 
+		      </div>
+		    </div>
+		  </div>
+		</div>
+    </div>
+  </div>
+</div>
+
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+
