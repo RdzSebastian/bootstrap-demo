@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Bootstrap</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<form class="form-horizontal">
+			<div class="form-group has-error has-feedback">
+				<label for="email" class="control-label col-md-3" >Email: </label>
+				<div class="col-md-6">
+					<input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+					<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+				</div>
+			</div>
+
+		  	<div class="form-group has-error has-feedback">
+		    	<label for="twitter" class="control-label col-md-3">Twitter:</label>
+		    
+		    	<div class="col-md-6">
+		    		<div class="input-group">
+		    			<span class="input-group-addon">@</span>
+		    			<input type="text" class="form-control" name="twitter" id="twitter"  placeholder="Twitter" />
+		    		</div>
+		    		<span class="glyphicon glyphicon-remove form-control-feedback"></span>
+		    	</div>
+	  		</div>
+
+		  	<div class="form-group">
+		    	<button type="button" class="btn btn-success col-md-4 col-md-offset-4">Submit button</button>
+		    </div>
+
+		</form>
+	</div>
+
+
+
+	<form class="form-horizontal">
+	  <div class="form-group has-error has-feedback">
+	    <label for="address" class="control-label col-md-3">Address:</label>
+	    <div class="col-md-6">
+	      <input type="text" name="address" id="address" class="form-control" />
+	      <!-- Glyphicon is placed after textbox -->
+	      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+	    </div>
+	  </div>
+	 
+	  <!-- Input group -->
+	  <div class="form-group has-error has-feedback">
+	    <label for="username" class="control-label col-md-3">Username:</label>
+	    <div class="col-md-6">
+	      <div class="input-group">
+	        <div class="input-group-addon">
+	          <span class="glyphicon glyphicon-user"></span>
+	        </div>
+	        <input type="text" class="form-control" name="username" id="username" />
+	      </div>
+	      <!-- Glyphicon is placed after input group-->
+	      <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+	    </div>
+	  </div>
+	</form>
+
+
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+

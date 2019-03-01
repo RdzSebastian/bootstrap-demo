@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Bootstrap</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+
+	<div class="container">
+		<form class="form-horizontal">
+			<div class="form-group">
+				<label for="email" class="control-label col-md-3" >Email: </label>
+				<div class="col-md-6">
+					<input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div class="container">
+		<form class="form-horizontal">
+	  	<div class="form-group">
+	    	<label for="twitter" class="control-label col-md-3">Twitter:</label>
+	    	
+	    	<div class="col-md-6">
+	    		<div class="input-group">
+	    			<span class="input-group-addon">@</span>
+	    			<input type="text" name="twitter" id="twitter" class="form-control" placeholder="Twitter" />
+	    		</div>
+	    	</div>
+	  	</div>
+
+	  	<div class="form-group">
+	  		<div class="col-md-offset-4 btn-group" data-toggle="buttons">
+	  			<label class="btn btn-primary active">
+	  				<input type="radio" name="membership-leve" id="gold" checked />Gold
+	  			</label>
+	  			<label class="btn btn-primary">
+	  				<input type="radio" name="membership-leve" id="silver"/>Silver
+	  			</label>
+	  			<label class="btn btn-primary">
+	  				<input type="radio" name="membership-leve" id="bronze"/>Bronze
+	  			</label>
+	  		</div>
+	  	</div>
+
+
+
+	  	<div class="form-group">
+	    	<button type="button" class="btn btn-success col-md-4 col-md-offset-4">Submit button</button>
+	    </div>
+
+		</form>
+	</div>
+
+
+
+
+	<form class="form-horizontal">
+	 	<div class="form-group">
+	    	<div class="col-md-offset-3 btn-group" data-toggle="buttons">
+	     	 	<label class="btn btn-primary">
+	       		 	<input type="radio" id="first" name="sample" /> First
+	      		</label>
+	      		<label class="btn btn-primary">
+	        		<input type="radio" id="second" name="sample" /> Second
+	      		</label>
+	    	</div>
+	  	</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-default col-md-offset-3 col-md-4">Submit form</button>
+		</div>
+	</form>
+
+
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
+
