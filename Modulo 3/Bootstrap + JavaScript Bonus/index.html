@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello Bootstrap</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+	
+	<div class="container">
+		<div class="alert alert-success hidden" id="success-alert">
+			<h2>Saved Data</h2>
+			<div>Your information has been sudmitted</div>
+		</div>
+	</div>
+
+
+	<div class="row">
+		<a type="button" class="col-md-offset-3 col-md-6 btn btn-success" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+	</div>
+
+
+	
+	<div class="modal fade" id="modal-id">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Modal title</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+
+						<div class="form-group has-feedback">
+
+							<label for="email" class="control-label col-md-3" >Email: </label>
+							<div class="col-md-6">
+								<input type="email" class="form-control" required="required" name="email" id="email" placeholder="Email" />
+								<span class="glyphicon form-control-feedback"></span>
+							</div>
+						</div>
+
+
+					  	<div class="form-group has-feedback">
+					    	<label for="twitter" class="control-label col-md-3">Twitter:</label>
+					    
+					    	<div class="col-md-6">
+					    		<div class="input-group">
+					    			<span class="input-group-addon">@</span>
+					    			<input type="text" class="form-control" required="required" name="twitter" id="twitter"  placeholder="Twitter" />
+					    		</div>
+					    		<span class="glyphicon form-control-feedback"></span>
+					    	</div>
+				  		</div>
+
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary" id=save>Save changes</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="./js/jquery-3.3.1.slim.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+
+
+	<script>
+		$(function () {
+			$('#save').click(function() {
+				var formValid = true;
+
+				$('input').each(function() {
+					var formGroup = $(this).parents('.form-group');
+
+					var glyphicon = formGroup.find('.glyphicon');
+
+					if (this.checkValidity()) {
+						//Show green 
+						formGroup.addClass('has-success').removeClass('has-error');
+
+
+						glyphicon.addClass('glyphicon-ok').removeClass('glyphicon-remove');
+
+					} else{
+						//Show Red
+						formGroup.addClass('has-error').removeClass('has-success');
+						
+						glyphicon.addClass('glyphicon-remove').removeClass('glyphicon-ok');
+
+						formValid = false;
+
+				    }
+				});
+
+				if (formValid) {
+					$('#modal-id').modal('hide');
+
+					$('#success-alert').removeClass('hidden');
+				}
+			});
+		});
+
+	</script>
+
+</body>
+</html>
+
